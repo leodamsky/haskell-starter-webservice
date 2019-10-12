@@ -1,6 +1,6 @@
 rec {
   # Which version of GHC does the project need to be built with? This must exist in both nixpkgs, and hie-nix
-  ghcVersion = "ghc864";
+  ghcVersion = "ghc865";
   # Bootstrap the ability to fetch from GitHub
   fetchFromGitHub = (import <nixpkgs> {}).fetchFromGitHub;
 
@@ -20,15 +20,15 @@ rec {
     nixpkgs = {
       owner = "NixOs";
       repo = "nixpkgs";
-      rev = "5e7e5a2";
-      sha256 = "1m1ic0wgr2y0qq6iglpav1ajh6zcx2x4hk2fhf1n0p0h73v3601p";
+      rev = "8b57a75";
+      sha256 = "195cmpf2hch1aij4qib32r6gc8vw23hrhpjfj68w2kdqpzw7hi41";
     };
 
     all-hies = {
       owner = "Infinisil";
       repo = "all-hies";
-      rev = "a650670";
-      sha256 = "1m81gcbbxmf68j90j79h56k4zw5j7dihjz4brwj1qhvd8mb5psar";
+      rev = "0cba12c";
+      sha256 = "1f91nrksr2x0zi2kbsy6qf4fmb1ybpx9p55rijhhs05rssk4b0nq";
     };
   };
 
